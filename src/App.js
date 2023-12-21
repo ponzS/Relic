@@ -12,10 +12,12 @@ import './App.css';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
-import PublicIcon from '@mui/icons-material/Public';
+ import PublicIcon from '@mui/icons-material/Public';
 
 
 import ArticlePage from './components/ArticlePage1';
+// 导入CountdownTimer组件
+import CountdownTimer from './components/CountdownTimer';
 
 
 function App() {
@@ -87,49 +89,7 @@ function App() {
   return (
     <Router>
 
-{/* 悬浮按钮 */}
-<Fab
-  color="primary"
-  aria-label="expand-buttons"
-  onClick={toggleMainButton}
-  style={{
-    position: 'fixed',
-    top: 5,
-    left:10,
-    height:50,
-    right: isMainButtonExpanded ? 116 : 16, // 根据需要调整 right 的值
-    transition: 'all 0.3s ease-in-out',
-  }}
->
-<PublicIcon />{/*图标*/ }
-</Fab>
 
-<div
-  style={{
-    position: 'fixed',
-    // right: isMainButtonExpanded ? 66 : 16,
-    top: 0, // 根据你的需要调整初始位置
-    left: 70,
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    transition: 'all 0.3s ease-in-out',
-    width: isMainButtonExpanded ? '150px' : '0', // 根据你的需要设置展开时的高度
-    overflow: 'hidden',
-    zIndex:100,
-  }}
->
-  {/* 这里放置三个按钮 */}
-  <IconButton color="primary" onClick={handleButton1Click}>
-          <PublicIcon />{/*图标*/ }
-          </IconButton>
-          <IconButton color="primary" onClick={handleButton2Click}>
-          <PublicIcon />{/*图标*/ }
-          </IconButton>
-          <IconButton color="primary" onClick={handleButton3Click}>
-          <PublicIcon />{/*图标*/ }
-          </IconButton>
-</div>
 
 
       <div className={`App ${isDarkMode ? 'dark-mode' : ''}`} style={{ position: 'relative' }}>
@@ -238,7 +198,7 @@ function App() {
             {isArticle5Expanded && (
               <div className="article-description">
                 <p>
-                  <Link to="https://ponzs.github.io/ponzs.githab.io/days1.3/time.html">
+                  <Link to="/CountdownTimer">
                     倒计时
                   </Link>
                   
@@ -269,6 +229,7 @@ function App() {
           <Route path="/article4" element={<Article />} />
           <Route path="/article5" element={<Article />} />
           <Route path="/ArticlePage1" element={<ArticlePage />} />
+          <Route path="/CountdownTimer" element={<CountdownTimer />} />
         </Routes>
 
         <Taskbar onToggleTheme={toggleTheme} />

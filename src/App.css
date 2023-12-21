@@ -33,7 +33,7 @@ header h1 {
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61e9fb;
 }
 
 @keyframes App-logo-spin {
@@ -108,7 +108,7 @@ body {
 
 
 .article-module {
-  border: 1px solid #4beed3;
+  border: 1px solid #4beeee;
   padding: 10px;
   margin: 10px;
   cursor: pointer;

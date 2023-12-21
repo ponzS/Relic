@@ -11,9 +11,7 @@ function Taskbar({ onToggleTheme }) {
   };
 
   return (
-    <div className="taskbar" onClick={handleButtonClick}>
-        Change your experience
-    </div>
+    <div className="taskbar" onClick={handleButtonClick}>touchbar ></div>
   );
 }
 

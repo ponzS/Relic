@@ -31,9 +31,26 @@ nav {
     position: fixed;
     bottom: 0; /* 固定在底部 */
     width: 100%;
-    background-color: #10eaf1; /* 浅蓝色背景 */
+    /* background-color: #10eaf1;  */
+    animation: breatheAnimation 5s infinite;
+    background: linear-gradient(to bottom, #4e54c8, #6251f8, #7e6efe, #a86df1, #d882e5, #fe9a8b, #fec697, #f6d57b, #4e54c8);
     color: #fff; /* 文字颜色 */
-    padding: 20px;
-    text-align: center;
+    font-weight: bold; /* 文字加粗 */
+    
+    padding: 25px;
+    /* text-align: center; */
+    text-align: left;
     cursor: pointer;
   }
+  @keyframes breatheAnimation {
+    0%, 100% {
+      background-size: 100% 300%;
+    }
+    50% {
+      background-size: 100% 110%;
+    }
+  }
+
+  /* animation: breatheAnimation 3s infinite;  */
+  /* 使用名为 gradientAnimation 的动画，5秒钟一次，无限循环，交替变换 */
+    /* background: linear-gradient(to bottom, #4e54c8, #6251f8, #7e6efe, #a86df1, #d882e5, #fe9a8b, #fec697, #f6d57b, #4e54c8); */
