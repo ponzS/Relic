@@ -1,0 +1,39 @@
+
+nav {
+    background-color: #fff; /* 设置导航栏背景颜色为白色 */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  li {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333; /* 设置链接文字颜色为深灰色 */
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  a:hover {
+    color: #bd4faa; /* 设置链接文字在悬停时的颜色为黑色 */
+  }
+  .taskbar {
+    position: fixed;
+    bottom: 0; /* 固定在底部 */
+    width: 100%;
+    background-color: #10eaf1; /* 浅蓝色背景 */
+    color: #fff; /* 文字颜色 */
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }

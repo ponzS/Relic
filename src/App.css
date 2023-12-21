@@ -1,0 +1,185 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #0c0c0c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+header h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #2437df; 
+  
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+}
+
+.App {
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+.contact-info {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: #333;
+  
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* .floating-buttons {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(92, 179, 253, 0.7);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 1000;
+} */
+
+/* .floating-buttons.expanded {
+  height: auto;
+  opacity: 1;
+}
+
+.expand-button {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  background-color: rgba(92, 179, 253, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+} */
+
+
+.article-module {
+  border: 1px solid #4beed3;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.article-module.expanded {
+  height: auto;
+}
+
+.article-description {
+  
+  margin-top: 10px;
+  margin-bottom: 50px; /* 调整这里的数值以确保 update-time 不会遮挡到文章描述 */
+}
+
+.article-description a {
+  display: block;
+  margin-bottom: 5px; /* 调整链接之间的间距，根据需要调整 */
+}
+
+.update-time {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #666;
+}
+
+/* .floating-buttons {
+  position: fixed;
+  bottom: 10px;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: rgba(92, 179, 253, 0.7);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 1000;
+  display: none; 
+}*/
+
+/* .floating-buttons.expanded {
+  opacity: 1;
+} 
+
+.expand-button {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  background-color: rgba(92, 179, 253, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.floating-buttons {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: rgba(92, 179, 253, 0.7);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 1000;
+} */
+
+

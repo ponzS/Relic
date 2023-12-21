@@ -1,0 +1,35 @@
+
+
+.article-page {
+    animation: breatheAnimation 3s infinite; /* 使用名为 gradientAnimation 的动画，5秒钟一次，无限循环，交替变换 */
+    background: linear-gradient(to bottom, #4e54c8, #6251f8, #7e6efe, #a86df1, #d882e5, #fe9a8b, #fec697, #f6d57b, #4e54c8);
+
+    /* background: linear-gradient(to bottom, #4e54c8, #b0b4fc);  */
+    height: 100%; /* 设置页面高度为视窗高度，使渐变色背景充满整个页面 */
+    display: flex;
+    flex-direction: column; /* 设置为垂直方向布局 */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* 添加顶部外边距，增加页面内容和主页模块之间的距离 */
+  }
+  
+  
+  .content-box {
+    background: white;
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  
+
+  
+  @keyframes breatheAnimation {
+    0%, 100% {
+      background-size: 100% 300%;
+    }
+    50% {
+      background-size: 100% 110%;
+    }
+  }
+  
